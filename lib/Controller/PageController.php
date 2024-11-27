@@ -139,6 +139,20 @@ class PageController extends Controller
 
     #[NoAdminRequired]
     #[NoCSRFRequired]
+    public function livephotos(): Response
+    {
+        return $this->main();
+    }
+
+    #[NoAdminRequired]
+    #[NoCSRFRequired]
+    public function panoramas(): Response
+    {
+        return $this->main();
+    }
+
+    #[NoAdminRequired]
+    #[NoCSRFRequired]
     public function archive(): Response
     {
         return $this->main();
